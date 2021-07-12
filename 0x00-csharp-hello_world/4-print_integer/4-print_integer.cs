@@ -7,7 +7,7 @@ namespace _4_print_integer
         static void Main(string[] args)
         {
             int number = 972;
-		    Console.WriteLine("{} Mission Street", number);
+		    Console.WriteLine("{0} {1}", number, "Mission Street");
         }
     }
 }
