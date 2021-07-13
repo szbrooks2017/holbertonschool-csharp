@@ -4,16 +4,22 @@ class Program
 {
     static void Main(string[] args)
     {
+        string expression;
         for (int i = 0; i <= 99; i++)
         {
-            if (i == 99)
+            if (i < 10)
             {
-                Console.Write("{0}\n", i);
+                expression = "0{0}, ";
+            }
+            else if (i == 99)
+            {
+                expression = "{0}\n";
             }
             else
             {
-                Console.Write("{0}, ", i);   
+                expression = "{0}, ";
             }
+            Console.Write(expression, i);   
         }
     }
 }
