@@ -24,7 +24,14 @@ class List
         {
             newList.Add(i);
             Console.Write(i);
-            // if (i == size - 1)
+            if (i == size - 1)
+            {
+                Console.WriteLine();
+            }        
+            else
+            {
+                Console.Write(" ");
+            }
         }
         return newList;
     }
