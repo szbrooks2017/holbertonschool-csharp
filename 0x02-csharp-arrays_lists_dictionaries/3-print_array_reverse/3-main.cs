@@ -8,10 +8,12 @@ class Program
         int[] array2 = null;
         int[] array3 = {};
         int[] array4 = {98, -10, 0, 972, -42};
+        int[] array5 = {1};
 
         Array.Reverse(array1);
         Array.Reverse(array2);
         Array.Reverse(array3);
         Array.Reverse(array4);
+        Array.Reverse(array5);
     }
 }

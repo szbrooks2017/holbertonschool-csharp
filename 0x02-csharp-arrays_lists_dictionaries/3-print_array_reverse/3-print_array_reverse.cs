@@ -13,7 +13,15 @@ class Array
         {
             for (int i = array.Length - 1; i >= 0; i--)
             {
-                Console.Write(array[i] + " ");
+                if (i != 0)
+                {
+                    Console.Write(array[i] + " ");
+                }
+                else
+                {
+                Console.Write(array[i]);
+                }
+
             }
             Console.WriteLine();
         }
