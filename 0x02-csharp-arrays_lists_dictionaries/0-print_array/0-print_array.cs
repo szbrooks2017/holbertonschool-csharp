@@ -14,7 +14,7 @@ class Array
             Console.WriteLine("");
         }
 
-        if (size <= 0)
+        if (size < 0)
         {
             Console.WriteLine("Size cannot be negative");
             return null;
@@ -22,15 +22,19 @@ class Array
 
         for (int i = 0; i < size; i++)
         {
-           if (newArray[i] < size - 1)
-           {
-               Console.Write(i + " ");
-           } 
+            newArray[i] = i;
+            Console.Write(newArray[i]);
+
+            if (i == size - 1)
+            {
+                Console.WriteLine();
+            }        
             else
             {
-                Console.WriteLine("");
+                Console.Write(" ");
             }
         }
+        // Console.WriteLine();
         return newArray;
     }
 }
