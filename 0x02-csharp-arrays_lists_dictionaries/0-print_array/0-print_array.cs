@@ -7,11 +7,11 @@ class Array
         // int should start with 0, increment by one
         // if size is 0 print blank line
         // if size < 0 print size cannot be negative return null
-        int[] newArray = new int[size];
+        // int[] newArray = new int[size];
         
         if (size == 0)
         {
-            Console.WriteLine("");
+            Console.WriteLine();
         }
 
         if (size < 0)
@@ -19,7 +19,7 @@ class Array
             Console.WriteLine("Size cannot be negative");
             return null;
         }
-
+        int[] newArray = new int[size];
         for (int i = 0; i < size; i++)
         {
             newArray[i] = i;
