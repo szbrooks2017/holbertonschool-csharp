@@ -24,7 +24,7 @@ class Array
         {
            if (newArray[i] < size - 1)
            {
-               Console.Write(i + ", ");
+               Console.Write(i + " ");
            } 
             else
             {
