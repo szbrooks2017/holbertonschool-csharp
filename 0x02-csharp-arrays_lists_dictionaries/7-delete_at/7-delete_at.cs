@@ -10,7 +10,7 @@ class List
     {
         if (index >= 0 && index < myList.Count)
         {
-            myList.Remove(index);
+            myList.RemoveRange(index, 1);
         }
         else
         {
