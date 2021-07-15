@@ -27,14 +27,7 @@ class MyStack
         Console.WriteLine("Top item: {0}", topItem);
 
         // if it contains search
-        if (aStack.Contains(search))
-        {
-            Console.WriteLine("Stack contains \"{0}\": True", search);
-        }
-        else
-        {
-            Console.WriteLine("Stack contains \"{0}\": False", search);
-        }
+        Console.WriteLine("Stack contains \"{0}\": {1}", search, aStack.Contains(search));
 
         while (aStack.Contains(search) == true)
         {
