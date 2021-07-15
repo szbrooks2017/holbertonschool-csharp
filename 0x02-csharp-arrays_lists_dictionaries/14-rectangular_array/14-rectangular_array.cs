@@ -14,7 +14,14 @@ class Program
         {
             for (int y = 0; y < height; y++)
             {
-                Console.Write(grid[x,y] + " ");
+                if (y == 5)
+                {
+                    Console.Write(grid[x,y]);
+                }
+                else
+                {
+                    Console.Write(grid[x,y] + " ");
+                }
             }
             Console.WriteLine();
         }
