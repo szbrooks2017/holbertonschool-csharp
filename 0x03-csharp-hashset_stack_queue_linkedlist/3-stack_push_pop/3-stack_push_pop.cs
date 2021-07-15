@@ -14,6 +14,15 @@ class MyStack
     {
         if (aStack.Count == 0)
         {
+            // if it contains search
+            if (aStack.Contains(search))
+            {
+                Console.WriteLine("Stack contains \"{0}\": True", search);
+            }
+            else
+            {
+                Console.WriteLine("Stack contains \"{0}\": False", search);
+            }
             Console.WriteLine("Stack is empty");
         }
 
