@@ -24,7 +24,7 @@ class MyQueue
         {
             // top item
             string topItem = aQueue.Peek();
-            Console.WriteLine("Top item: {0}", topItem);
+            Console.WriteLine("First item: {0}", topItem);
         }
 
         // if it contains search
