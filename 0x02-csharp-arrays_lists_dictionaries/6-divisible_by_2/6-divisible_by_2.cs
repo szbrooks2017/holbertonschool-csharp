@@ -8,7 +8,7 @@ class List
     public static List<bool> DivisibleBy2(List<int> myList)
     {
         List<bool>tfList = new List<bool>();
-        for (int i = 1; i <= myList.Count; i++)
+        foreach (int i in myList)
         {
             if ((i % 2) == 0)
             {
