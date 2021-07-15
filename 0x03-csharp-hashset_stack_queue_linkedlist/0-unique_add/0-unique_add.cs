@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+
 // write a method that adds all unique ints in a list
 class List
 {
