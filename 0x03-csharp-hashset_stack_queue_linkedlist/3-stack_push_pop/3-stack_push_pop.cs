@@ -12,15 +12,15 @@ class MyStack
 {
     public static Stack<string> Info(Stack<string> aStack, string newItem, string search)
     {
+        // count of items in stack
+        int count = aStack.Count;
+        Console.WriteLine("Number of items: {0}", count);
+
         if (aStack.Count == 0)
         {
             Console.WriteLine("Stack is empty");
             Console.WriteLine("Stack contains \"{0}\": {1}", search, aStack.Contains(search));
         }
-
-        // count of items in stack
-        int count = aStack.Count;
-        Console.WriteLine("Number of items: {0}", count);
 
         // top item
         string topItem = aStack.Peek();
