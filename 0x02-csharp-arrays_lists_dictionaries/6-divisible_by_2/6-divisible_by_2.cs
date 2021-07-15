@@ -10,7 +10,7 @@ class List
         List<bool>tfList = new List<bool>();
         for (int i = 1; i <= myList.Count; i++)
         {
-            if (i % 2 == 0)
+            if ((i % 2) == 0)
             {
                 tfList.Add(true);
             }
