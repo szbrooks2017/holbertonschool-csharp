@@ -14,7 +14,7 @@ class Program
         {
             for (int y = 0; y < height; y++)
             {
-                if (y == 5)
+                if (y == height - 1)
                 {
                     Console.Write(grid[x,y]);
                 }
