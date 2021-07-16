@@ -7,15 +7,10 @@ class LList
 {
     public static int GetNode(LinkedList<int> myLList, int n)
     {
-
-        var value = myLList.ElementAt(n);
-        if (value != n)
-        {
-            return value;
-        }
-        else
+        if (myLList.Count == 0)
         {
             return 0;
         }
+        return myLList.ElementAt(n);
     }
 }
