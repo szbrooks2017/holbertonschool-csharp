@@ -20,10 +20,17 @@ class LList
             return nnode;
         }
 
-        if (head.Value > n)
+        if (head.Value >= n)
         {
             myLList.AddBefore(head, nnode);
             return nnode;
         }
+
+        while (head.Next != null && head.Next.Value < n)
+        {
+            head = head.Next;
+        }
+        myLList.AddAfter(head, nnode);
+        return nnode;
     }
 }
