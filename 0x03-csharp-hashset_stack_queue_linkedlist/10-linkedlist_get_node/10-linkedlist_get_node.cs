@@ -7,7 +7,7 @@ class LList
 {
     public static int GetNode(LinkedList<int> myLList, int n)
     {
-        if (myLList.Count == 0)
+        if (myLList.Count == 0 || n < 0)
         {
             return 0;
         }
