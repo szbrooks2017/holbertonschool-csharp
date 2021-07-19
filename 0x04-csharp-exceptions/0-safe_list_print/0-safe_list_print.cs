@@ -11,7 +11,7 @@ class List
         {
             while (i < n)
             {
-                Console.WriteLine(myList[n]);
+                Console.WriteLine(myList[i]);
                 i++;
             }
         }
