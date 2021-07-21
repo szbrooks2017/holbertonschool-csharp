@@ -18,7 +18,7 @@ namespace Enemies
             }
             else
             {
-                health = value;
+                this.health = value;
             }
         }
     }
