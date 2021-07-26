@@ -8,7 +8,9 @@ namespace console
         static void Main(string[] args)
         {
             string s = "helloholberton";
+            string s1 = "";
             Console.WriteLine(Text.Str.UniqueChar(s));
+            Console.WriteLine(Text.Str.UniqueChar(s1));
         }
     }
 }
