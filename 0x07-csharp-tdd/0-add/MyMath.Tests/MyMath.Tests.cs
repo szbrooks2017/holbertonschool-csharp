@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace MyMath.Tests
 {
-    [TextFixture]
+    [TestFixture]
     ///<summary>Tests Add()</summary>
     public class AddTests
     {
