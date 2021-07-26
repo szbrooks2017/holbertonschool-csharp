@@ -2,8 +2,10 @@
 
 namespace MyMath
 {
+    ///<summary> method divide elements of a matrix</summary>
     public class Matrix
     {
+        ///<summary>method that divides the element by a number</summary>
         public static int[,] Divide(int[,] matrix, int num)
         {
             if (matrix == null)
