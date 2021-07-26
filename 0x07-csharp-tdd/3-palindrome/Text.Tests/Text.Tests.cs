@@ -16,7 +16,7 @@ namespace Text.Tests
         [Test]
         public void Test2()
         {
-            string s = "Taco cat";
+            string s = "Taco cat.";
             bool result = Str.IsPalindrome(s);
             Assert.AreEqual(true, result);
         }
