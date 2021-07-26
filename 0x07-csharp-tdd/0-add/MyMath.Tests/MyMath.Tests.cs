@@ -3,7 +3,7 @@ using NUnit.Framework;
 namespace MyMath.Tests
 {
     [TextFixture]
-    public class Tests
+    public class OperationsTests
     {
         [Test]
         public void Add_postive()
@@ -11,7 +11,7 @@ namespace MyMath.Tests
             int a = 98;
             int b = 2;
             int result = MyMath.Operations.Add(a,b);
-            Assert.AreEqual(a + b, c);
+            Assert.AreEqual(a + b, result);
         }
     }
 }
