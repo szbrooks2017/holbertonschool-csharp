@@ -2,9 +2,12 @@ using NUnit.Framework;
 
 namespace MyMath.Tests
 {
+    [TestFixture]
+    ///<summary>Tests for Divide</summary>
     public class MatrixTests
     {
 
+        [Test]
         public void Test1()
         {
             int[,] matrix = null;
