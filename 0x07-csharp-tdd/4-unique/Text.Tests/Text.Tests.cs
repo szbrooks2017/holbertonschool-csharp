@@ -14,5 +14,12 @@ namespace Text.Tests
             var result = Str.UniqueChar(s);
             Assert.AreEqual(-1, result);
         }
+        [Test]
+        public void Test2()
+        {
+            string s = "helloholberton";
+            var result = Str.UniqueChar(s);
+            Assert.AreEqual(8, result);
+        }
     }
 }
