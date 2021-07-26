@@ -13,5 +13,12 @@ namespace Text.Tests
             bool result = Str.IsPalindrome(s);
             Assert.AreEqual(true, result);
         }
+        [Test]
+        public void Test2()
+        {
+            string s = "Sun day";
+            bool result = Str.IsPalindrome(s);
+            Assert.AreEqual(false, result);
+        }
     }
 }
