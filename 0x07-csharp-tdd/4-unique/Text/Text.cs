@@ -10,18 +10,15 @@ namespace Text
         ///<summary> method that returns a unique character or -1 if none</summary>
         public static int UniqueChar(string s)
         {
-            int i;
-            for (i = 0; i < s.Length; i++)
+            for (int i = 0; i < s.Length; i++)
             {
-                for (int j = i + 1; j < s.Length; j++)
+                char unique = s[i];
+                if (s.IndexOf(unique) == i && s.IndexOf(unique, i + 1) == -1)
                 {
-                    if (s[i] == s[j])
-                    {
-                        return -1;
-                    }
+                    return i;
                 }
             }
-            return i;
+            return -1;
         }
     }
 }
