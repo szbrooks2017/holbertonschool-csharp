@@ -3,15 +3,14 @@ using NUnit.Framework;
 namespace MyMath.Tests
 {
     [TextFixture]
-    public class OperationsTests
+    ///<summary>Tests Add()</summary>
+    public class AddTests
     {
         [Test]
         public void Add_postive()
         {
-            int a = 98;
-            int b = 2;
-            int result = MyMath.Operations.Add(a,b);
-            Assert.AreEqual(a + b, result);
+            int result = Operations.Add(98, 2);
+            Assert.AreEqual(100, result);
         }
     }
 }
