@@ -10,7 +10,7 @@ namespace Text
         public static bool IsPalindrome(string s)
         {
             string s2 = s.ToLower();
-            string stripped = Regex.Replace(s2,  @"[^\w\s]", "");
+            string stripped = Regex.Replace(s2, @"[,.:; ]", "");
             int low = 0;
             int high = stripped.Length - 1;
 
