@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace Text
 {
@@ -9,12 +10,13 @@ namespace Text
         public static bool IsPalindrome(string s)
         {
             string s2 = s.ToLower();
+            string stripped = Regex.Replace(s2,  @"[^\w\s]", "");
             int low = 0;
-            int high = s2.Length - 1;
+            int high = stripped.Length - 1;
 
             while (low < high)
             {
-                if (s2[low] != s2[high])
+                if (stripped[low] != stripped[high])
                 {
                     return false;
                 }
