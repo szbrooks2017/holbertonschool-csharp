@@ -21,5 +21,26 @@ namespace Text.Tests
             var result = Str.UniqueChar(s);
             Assert.AreEqual(8, result);
         }
+        [Test]
+        public void Test3()
+        {
+            string s = "hhht";
+            var result = Str.UniqueChar(s);
+            Assert.AreEqual(3, result);
+        }
+        [Test]
+        public void Test4()
+        {
+            string s = "httt";
+            var result = Str.UniqueChar(s);
+            Assert.AreEqual(0, result);
+        }
+                [Test]
+        public void Test5()
+        {
+            string s = "hhhhh";
+            var result = Str.UniqueChar(s);
+            Assert.AreEqual(-1, result);
+        }
     }
 }
