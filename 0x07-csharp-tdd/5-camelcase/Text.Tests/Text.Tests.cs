@@ -14,5 +14,12 @@ namespace Text.Tests
             var result = Str.CamelCase(s);
             Assert.AreEqual(0, result);
         }
+                [Test]
+        public void Test_mulitiple_words()
+        {
+            string s = "testTestFor";
+            var result = Str.CamelCase(s);
+            Assert.AreEqual(3, result);
+        }
     }
 }
