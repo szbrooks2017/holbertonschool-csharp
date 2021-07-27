@@ -28,5 +28,12 @@ namespace Text.Tests
             var result = Str.CamelCase(s);
             Assert.AreEqual(1, result);
         }
+                [Test]
+        public void Test_two_words()
+        {
+            string s = "testTest";
+            var result = Str.CamelCase(s);
+            Assert.AreEqual(2, result);
+        }
     }
 }
