@@ -9,12 +9,13 @@ namespace Text
         public static int CamelCase(string s)
         {
             int count = 0;
+
+            if (s.Length == 0 || s == null) return 0;
+            
             for (int i = 0; i < s.Length; i++)
             {
                 if (char.IsUpper(s[i])) count++;
             }
-            if (count == 0) return 0;
-
             return count + 1;
         }
     }
