@@ -13,7 +13,7 @@ namespace Text
             {
                 if (char.IsUpper(s[i])) count++;
             }
-            return count;
+            return count + 1;
         }
     }
 }
