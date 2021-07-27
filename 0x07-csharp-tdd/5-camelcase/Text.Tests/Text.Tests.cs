@@ -17,9 +17,16 @@ namespace Text.Tests
         [Test]
         public void Test_mulitiple_words()
         {
-            string s = "testTestForJust";
+            string s = "testTestForJustLet";
             var result = Str.CamelCase(s);
-            Assert.AreEqual(4, result);
+            Assert.AreEqual(5, result);
+        }
+        [Test]
+        public void Test_one_word()
+        {
+            string s = "test";
+            var result = Str.CamelCase(s);
+            Assert.AreEqual(1, result);
         }
     }
 }
