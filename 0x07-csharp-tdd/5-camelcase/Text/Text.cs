@@ -8,7 +8,12 @@ namespace Text
         ///</summary>method that returns number of words in s</summary>
         public static int CamelCase(string s)
         {
-            return 0;
+            int count = 0;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (char.IsUpper(s[i])) count++;
+            }
+            return count;
         }
     }
 }
