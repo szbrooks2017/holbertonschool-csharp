@@ -3,8 +3,7 @@ using System.Reflection;
 
 class Obj
 {
-    ///<summary>prints the available properties</summary>
-    ///<param name="myObj">Object input</param>
+    ///<summary>prints the available properties.</summary>
     public static void Print(object myObj)
     {
         PropertyInfo[] pi = myObj.GetType().GetProperties();
