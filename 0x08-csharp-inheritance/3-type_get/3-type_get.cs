@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 
 ///<summary>Creates an Obj class that checks an obj</summary>
