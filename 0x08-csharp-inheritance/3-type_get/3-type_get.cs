@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
+///<summary>Creates a class that checks an obj.</summary>
 class Obj
 {
     ///<summary>prints the available properties.</summary>
