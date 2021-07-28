@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Reflection;
 
-///<summary> a method that prints the names of the available properties and methods of an object.</summary>
 class Obj
 {
     ///<summary> prints the available properties</summary>
