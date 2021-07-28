@@ -8,10 +8,8 @@ class Obj
     public static void Print(object myObj)
     {
         // for properties
-        Type tMeth = myObj.GetType();
-        Type tProp = myObj.GetType();
-        PropertyInfo[] pi = tProp.GetProperties();
-        MethodInfo[] mi = tMeth.GetMethods();
+        PropertyInfo[] pi = myObj.GetType().GetProperties();
+        MethodInfo[] mi = myObj.GetType().GetMethods();
 
         Console.WriteLine(myObj.GetType().Name + "Properties:");
         foreach (PropertyInfo p in pi)
