@@ -12,12 +12,12 @@ class Obj
         PropertyInfo[] pi = myObj.GetType().GetProperties();
         MethodInfo[] mi = myObj.GetType().GetMethods();
 
-        Console.WriteLine(myObj.GetType().Name + "Properties:");
+        Console.WriteLine(myObj.GetType().Name + " Properties:");
         foreach (PropertyInfo p in pi)
         {
             Console.WriteLine(p.Name);
         }
-        Console.WriteLine(myObj.GetType().Name + "Methods:");
+        Console.WriteLine(myObj.GetType().Name + " Methods:");
         foreach (MethodInfo m in mi)
         {
             Console.WriteLine(m.Name);
