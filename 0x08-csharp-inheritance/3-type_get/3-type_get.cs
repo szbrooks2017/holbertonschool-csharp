@@ -10,15 +10,15 @@ class Obj
         // for properties
         Type t = myObj.GetType();
         PropertyInfo[] pi = t.GetProperties();
+        // for methods
+        Type tt = myObj.GetType();
+        MethodInfo[] mi = tt.GetMethods();
+
         Console.WriteLine(myObj.GetType().Name + "Properties:");
         foreach (PropertyInfo p in pi)
         {
             Console.WriteLine(p.Name);
         }
-
-        // for methods
-        Type tt = myObj.GetType();
-        MethodInfo[] mi = tt.GetMethods();
         Console.WriteLine(myObj.GetType().Name + "Methods:");
         foreach (MethodInfo m in mi)
         {
