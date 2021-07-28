@@ -3,16 +3,15 @@ using System.Reflection;
 
 class Obj
 {
-    ///<summary> prints the available properties</summary>
+    ///<summary>prints the available properties</summary>
     ///<param name="myObj">Object input</param>
     public static void Print(object myObj)
     {
         // for properties
-        Type t = myObj.GetType();
-        PropertyInfo[] pi = t.GetProperties();
-        // for methods
-        Type tt = myObj.GetType();
-        MethodInfo[] mi = tt.GetMethods();
+        Type tMeth = myObj.GetType();
+        Type tProp = myObj.GetType();
+        PropertyInfo[] pi = tProp.GetProperties();
+        MethodInfo[] mi = tMeth.GetMethods();
 
         Console.WriteLine(myObj.GetType().Name + "Properties:");
         foreach (PropertyInfo p in pi)
