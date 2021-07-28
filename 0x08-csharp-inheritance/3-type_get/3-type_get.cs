@@ -7,7 +7,6 @@ class Obj
     ///<param name="myObj">Object input</param>
     public static void Print(object myObj)
     {
-        // for properties
         PropertyInfo[] pi = myObj.GetType().GetProperties();
         MethodInfo[] mi = myObj.GetType().GetMethods();
 
