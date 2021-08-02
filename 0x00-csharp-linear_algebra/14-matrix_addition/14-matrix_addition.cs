@@ -9,14 +9,14 @@ class MatrixMath
         double[,] matrix3;
         double[,] bad = new double[,] {{-1}};
         int row = matrix1.GetLength(0);
-        int column = matrix2.GetLength(1);
+        int column = matrix1.GetLength(1);
+        int row2 = matrix2.GetLength(0);
 
-
-        if (row == 2 && column == 2 && row == column)
+        if ((row == 2 && column == 2) && row == row2)
         {
             matrix3 = new double[2, 2];
         }
-        else if (row == 3 && column == 3 && row == column)
+        else if ((row == 3 && column == 3) && row == row2)
         {
             matrix3 = new double[3, 3];
         }
