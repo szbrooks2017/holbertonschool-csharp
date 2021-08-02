@@ -16,7 +16,7 @@ class MatrixMath
         {
             matrix3 = new double[2, 2];
         }
-        else if (column == 2 && row == 2 && column == row)
+        else if (column == 3 && row == 3 && column == row)
         {
             matrix3 = new double[3, 3];
         }
