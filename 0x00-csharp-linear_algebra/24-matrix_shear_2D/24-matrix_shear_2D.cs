@@ -39,7 +39,7 @@ class MatrixMath
                     matrix3[i, j] += (matrix[i, k] * shear[k, j]);
                 }
             }
-            return matrix3;
         }
+        return matrix3;
     }
 }
