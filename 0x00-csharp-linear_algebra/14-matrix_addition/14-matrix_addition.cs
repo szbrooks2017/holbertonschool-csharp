@@ -12,11 +12,11 @@ class MatrixMath
         int column = matrix2.GetLength(1);
 
 
-        if (column == 2 && row == 2 && column == row)
+        if (row == 2 && column == 2 && row == column)
         {
             matrix3 = new double[2, 2];
         }
-        else if (column == 3 && row == 3 && column == row)
+        else if (row == 3 && column == 3 && row == column)
         {
             matrix3 = new double[3, 3];
         }
