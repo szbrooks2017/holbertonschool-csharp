@@ -1,7 +1,9 @@
 ﻿using System;
 
+///<summary>Class for matrices.</summary>
 class MatrixMath
 {
+    ///<summary>Method that mulitplies a matrix by a scalar.</summary>
     public static double[,] MultiplyScalar(double[,] matrix, double scalar)
     {
         double[,] matrix3;
