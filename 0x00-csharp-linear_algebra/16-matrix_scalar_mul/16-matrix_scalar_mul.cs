@@ -6,9 +6,8 @@ class MatrixMath
     {
         double[,] matrix3;
         double[,] bad = new double[,] {{-1}};
-        int row = matrix1.GetLength(0);
-        int column = matrix1.GetLength(1);
-        int row2 = matrix2.GetLength(0);
+        int row = matrix.GetLength(0);
+        int column = matrix.GetLength(1);
 
         if (row == 2 && column == 2)
         {
@@ -25,7 +24,10 @@ class MatrixMath
 
         for (int i = 0; i < row; i++)
         {
-            matrix3[i] = matrix[i] * scalar;
+            for (int j = 0; j< column; j++)
+            {
+                matrix3[i, j] = matrix[i, j] * scalar;
+            }
         }
         return matrix3;
     }
