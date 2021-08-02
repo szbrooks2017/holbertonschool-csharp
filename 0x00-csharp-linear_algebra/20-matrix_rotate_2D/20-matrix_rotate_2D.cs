@@ -3,7 +3,7 @@
 ///<summary>Class for matrices.</summary>
 class MatrixMath
 {
-    ///<summary>Method that mulitplies a matrix by a Matrix.</summary>
+    ///<summary>Method that rotates a matrix by a Matrix.</summary>
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
         int row = matrix1.GetLength(0);
@@ -26,7 +26,7 @@ class MatrixMath
                     temp = 0;
                     for (int k = 0; k < column; k++)
                     {
-                        temp += Math.Round(matrix1[i, k] * rotate[k, j], 2);
+                        temp += Math.Round(matrix[i, k] * rotate[k, j], 2);
                     }
                     matrix3[i, j] = temp;
                 }
