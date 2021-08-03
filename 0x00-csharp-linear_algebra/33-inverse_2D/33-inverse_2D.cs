@@ -10,7 +10,7 @@ class MatrixMath
         int row = matrix.GetLength(0);
         int column = matrix.GetLength(1);
         double[,] bad = new double[,] {{-1}};
-        double det = (matrix[0,0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0]);
+        double det = (matrix[0,0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
 
         if (row == 2 && column == 2)
         {
@@ -20,7 +20,7 @@ class MatrixMath
             }
             else
             {
-                double[,] inverse = new double[2, 2] {{Math.Round((1 / det) * matrix[1, 1], 2), Math.Round((1 / det) * -matrix[0, 1], 2)}, {Math.Round((1 / det) * -matrix[1, 0], 2), Math.Round((1 / det) * matrix[0, 0],2)}};
+                double[,] inverse = new double[,] {{Math.Round((1 / det) * matrix[1, 1], 2), Math.Round((1 / det) * -matrix[0, 1], 2)}, {Math.Round((1 / det) * -matrix[1, 0], 2), Math.Round((1 / det) * matrix[0, 0],2)}};
                 return inverse;
             }
         }
