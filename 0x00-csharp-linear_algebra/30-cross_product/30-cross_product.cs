@@ -11,7 +11,7 @@ class VectorMath
         double[] bad = new double[] {-1};
         double[] cross = new double[3];
 
-        if (row != 3 && column != 3)
+        if (row != 3 || column != 3)
         {
             return bad;
         }
