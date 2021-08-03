@@ -18,9 +18,11 @@ class MatrixMath
             {
                 return bad;
             }
-
-            double[,] inverse = {{Math.Round((1 / det) * matrix[1, 1], 2), Math.Round((1 / det) * -matrix[0, 1], 2)}, {Math.Round((1 / det) * -matrix[1, 0], 2), Math.Round((1 / det) * matrix[0, 0],2)}};
-            return inverse;
+            else
+            {
+                double[,] inverse = {{Math.Round((1 / det) * matrix[1, 1], 2), Math.Round((1 / det) * -matrix[0, 1], 2)}, {Math.Round((1 / det) * -matrix[1, 0], 2), Math.Round((1 / det) * matrix[0, 0],2)}};
+                return inverse;  
+            }
         }
         else
         {
