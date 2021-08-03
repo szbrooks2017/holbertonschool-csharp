@@ -12,21 +12,14 @@ class MatrixMath
         double[,] bad = new double[,] {{-1}};
         double det = Math.Round((matrix[0,0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0]), 2);
 
-        if (row == 2 && column == 2)
+        if (matrix == null || row != 2 || column != 2 || row != column || det == 0)
         {
-            if (det == 0)
-            {
-                return bad;
-            }
-            else
-            {
-                double[,] inverse = {{Math.Round((1 / det) * matrix[1, 1], 2), Math.Round((1 / det) * -matrix[0, 1], 2)}, {Math.Round((1 / det) * -matrix[1, 0], 2), Math.Round((1 / det) * matrix[0, 0],2)}};
-                return inverse;  
-            }
+            return bad; 
         }
         else
         {
-            return bad;
+            double[,] inverse = new double[2,2] {{Math.Round((1 / det) * matrix[1, 1], 2), Math.Round((1 / det) * -matrix[0, 1], 2)}, {Math.Round((1 / det) * -matrix[1, 0], 2), Math.Round((1 / det) * matrix[0, 0],2)}};
+            return inverse; 
         }
     }
 }
