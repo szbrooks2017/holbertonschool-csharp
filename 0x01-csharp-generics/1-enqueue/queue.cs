@@ -10,7 +10,7 @@ class Queue<T>
     ///<summary> Public class Node that sets a linked list</summary>
     public class Node 
     {
-        public T value = default(T);
+        private T value = default(T);
         public Node next = null; 
 
         public Node(T n)
