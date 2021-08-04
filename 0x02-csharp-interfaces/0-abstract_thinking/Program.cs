@@ -4,7 +4,7 @@
 abstract class Base
 {
     ///<summary> public property</summary>
-    public string name;
+    public string name = "";
 
     ///<summary>method that overrides ToString</summary>
     public override string ToString()
