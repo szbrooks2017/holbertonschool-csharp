@@ -128,10 +128,7 @@ class Objs<T> : IEnumerable<T>
 
     public IEnumerator<T> GetEnumerator()
     {
-        foreach (T obj in newlist)
-        {
-            yield return obj;
-        }
+        return newlist.GetEnumerator();
     }
 
     IEnumerator IEnumerable.GetEnumerator()
