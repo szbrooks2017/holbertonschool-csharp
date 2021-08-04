@@ -47,7 +47,7 @@ class Queue<T>
         count++;
     }
 
- ///<summary> Method that creates/adds new node to the end</summary>
+ ///<summary> Method that removes new node to the end</summary>
     public T Dequeue()
     {
         if (head == null)
@@ -56,24 +56,7 @@ class Queue<T>
             return default(T);
         }
         T data = head.value;
-        if(tail == null)
-        {
-            head = null;
-            return data;
-        }
-        Node temp = tail;
-
-        while(temp.next != head)
-        {
-            temp = temp.next;
-        }
-        temp.next = null;
-        head = temp;
-
-        if (tail == head)
-        {
-            tail = null;
-        }
+        head = head.next;
         count--;
         return data;
     }
