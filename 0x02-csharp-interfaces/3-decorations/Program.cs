@@ -83,7 +83,7 @@ class Decoration : Base, IInteractive, IBreakable
         }
         else
         {
-            Console.WriteLine("The {0} is already broken", this.name);
+            Console.WriteLine("The {0} is already broken.", this.name);
         }
     }
 }
