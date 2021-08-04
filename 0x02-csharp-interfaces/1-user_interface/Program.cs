@@ -4,12 +4,12 @@
 abstract class Base
 {
     ///<summary> public property</summary>
-    public string name = "";
+    public string name { get; set; }
 
     ///<summary>method that overrides ToString</summary>
     public override string ToString()
     {
-        return $"{this.name} is a {this.GetType()}";
+        return (this.name + " is a " + this.GetType().ToString());
     }
 }
 
