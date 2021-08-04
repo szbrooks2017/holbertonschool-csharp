@@ -33,9 +33,6 @@ class Queue<T>
         if (head == null)
         {
             head = newnode;
-        }
-        else if (tail == null)
-        {
             tail = newnode;
         }
         else
