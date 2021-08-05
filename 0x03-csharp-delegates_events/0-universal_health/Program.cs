@@ -11,7 +11,7 @@ class Player
     ///<summary> constructor for the player stats</summary>
     public Player(string name = "Player", float maxHP = 100f)
     {
-        if (maxHP < 0)
+        if (maxHP < 0f)
         {
             this.maxHP = 100f;
             Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default..");
