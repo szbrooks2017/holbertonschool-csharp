@@ -51,7 +51,7 @@ class Player
         }
         else
         {
-            this.status = $"{this.name} is knocked out";
+            this.status = $"{this.name} is knocked out!";
         }
         Console.WriteLine(this.status);
     }
