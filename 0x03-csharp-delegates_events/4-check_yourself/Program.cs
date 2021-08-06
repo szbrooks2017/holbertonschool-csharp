@@ -35,7 +35,7 @@ class Player
     {
         if (e.currentHp == this.maxHp)
         {
-            this.status = $"{this.name} is in perfect Health!";
+            this.status = $"{this.name} is in perfect health!";
         }
         else if (e.currentHp >= (this.maxHp / 2))
         {
