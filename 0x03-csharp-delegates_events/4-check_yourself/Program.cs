@@ -53,6 +53,7 @@ class Player
         {
             this.status = $"{this.name} is knocked out";
         }
+        Console.WriteLine(this.status);
     }
 
     ///<summary> method that prints health</summary>
